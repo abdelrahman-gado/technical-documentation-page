@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+    color:#4d4e53;
+}
+
+#navbar {
+    min-width: 290px;
+    border-right: 3px solid rgba(0, 22, 22, 0.4);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width:300px;
+    height: 100%;
+}
+
+header {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 10px;
+}
+
+#navbar ul {
+    list-style: none;
+  
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #4d4e53;
+    display: block;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+
+#navbar ul li {
+    border-top: 1px solid black;
+    width: 100%;
+}
+
+#navbar ul {
+    height: 88%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#main-doc {
+    margin-left: 310px;
+    padding: 20px;
+}
+
+#main-doc .main-section header {
+    text-align: left;
+    margin: 0;
+}
+
+#main-doc .main-section article {
+    margin: 15px;
+    font-size: 0.96rem;
+}
+
+#main-doc .main-section article p {
+    margin: 15.36px 0;
+}
+
+#main-doc .main-section article ul {
+    padding-left: 40px;
+    margin: 15.36px 0;
+}
+
+#main-doc .main-section article ul li {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+#main-doc .main-section article code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+
+    #navbar {
+        width: 100%;
+        max-height: 275px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: none;
+        border-bottom: 2px solid rgba(0, 22, 22, 0.4);
+    }
+
+    #navbar header {
+        text-align: center;
+    }
+
+    #navbar ul {
+        border: 1px solid black;
+        height: 207px;
+    } 
+
+    #main-doc {
+        width: 100%;
+        margin-top: 275px;
+        margin-left: 0;
+    }
+}
